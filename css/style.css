@@ -1,0 +1,170 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.body {
+    background-image: url(../img/ouvriers.jpg);
+    background-size: cover;
+    background-color: brown;
+}
+
+.div_menu_gauche {
+    height: 10%;
+}
+
+/***** HEADER *****/
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo1 {
+    width: auto;
+    height: 152px;
+}
+
+/***** MAIN *****/
+
+.titre_gerant, .titre_client, .titre_presta, .loca {
+    transition: all 1.3s ease-in-out;
+}
+
+.titre_gerant.scroll, .titre_client.scroll, .titre_presta.scroll, .loca.scroll {
+    font-size: 37px;
+}
+
+.titre {
+    position: absolute;
+    left: 55%;
+    bottom: 54%;
+    font-weight: 600;
+    font-size: 32px;
+    animation: Slide 3.5s;
+}
+
+.titre2 {
+    position: absolute;
+    left: 55%;
+    width: 34%;
+    bottom: 46%;
+    color: white;
+    font-size: large;
+    font-style: italic;
+}
+
+.unordered_list {
+    list-style: none;
+    font-size: large;
+}
+
+.taille_div_nav {
+    height: 100px;
+}
+
+.liens {
+    color: black;
+}
+
+.liens:hover {
+    color: cornflowerblue;
+}
+
+.liens, a:hover {
+    text-decoration: none;
+}
+
+.img_tete {
+    width: 200px;
+    height: 200px;
+}
+
+.img_taille {
+    height: auto;
+    width: auto;
+} 
+
+.image_taille {
+    height: 300px;
+    width: 370px;
+}
+
+.contact {
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: cornflowerblue;
+    height: 60px;
+}
+
+.contact:hover {
+    background-color: rgb(140, 141, 143);
+    color: white;
+}
+
+/***** FOOTER *****/
+
+
+.footer {
+    height: 100px;
+    color: white;
+    background-color: rgb(27, 27, 27);
+}
+
+
+/***** BOUTON SCROLL TOP *****/
+
+#scroll_to_top { 
+    position: fixed; 
+    width: auto;
+    height: 25px; 
+    bottom: 50px; 
+    right: 35px; 
+    z-index: 200;
+    transition: all 0.9s ease-in-out;
+}
+
+#scroll_to_top img { 
+    width: 50px; 
+    color: white;
+}
+
+.img_retour_haut:hover {
+    cursor: pointer;
+}
+
+/***** EFFECTS CSS SLIDE TITLE *****/
+
+
+@keyframes Slide {
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.formulaire_de_connexion {
+    border: 2px black solid;
+    height: auto;
+    padding: 1%;
+}
+
+.barre_de_navigation {
+    border: solid black 1px;
+    height: 100px;
+}
+
+.menu_gauche {
+    height: 550px;
+    border: solid red 1px;
+}
+
+.page_centrale {
+    border: chartreuse solid 1px;
+    height: 550px;
+}
